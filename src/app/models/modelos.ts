@@ -1,3 +1,4 @@
+//interfaz para cards de las paginas
 export interface TarjetasInicio {
     titulo: string;
     descripcion:string;
