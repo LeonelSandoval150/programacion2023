@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 //importamos nuestra interfaz
-import { TarjetasInicio } from 'src/app/models/modelos';
+import { Perro } from 'src/app/models/perro';
 
 @Component({
   selector: 'app-inicio',
@@ -9,16 +9,31 @@ import { TarjetasInicio } from 'src/app/models/modelos';
 })
 export class InicioComponent {
   //propiedad publica (tipo array)
-  public info:TarjetasInicio[];
+
+  public info:Perro[];
+
 
   //INICIAMOS LA PROPIEDAD INFO
   constructor(){
-    this.info=[
+  this.info=[
     {
-      titulo:"tarjeta 1",
-      descripcion:"Foto de un leon ",
-      imagen:"https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80",
-      alt:"Leon"
+      id:"",
+      nombre:"mati",
+      descripcion:"es un perro muy buena onjda que le gustan las croquetas de perros y los paseos largos",
+      imagen:"https://fotografias.antena3.com/clipping/cmsimages01/2022/08/12/F30768A2-C006-4CF1-8701-6026559DB725/mas-4000-perros-utilizados-experimentos-cientificos-buscan-hogar-adopcion_103.jpg?crop=1700,1275,x0,y0&width=1200&height=900&optimize=low&format=webply",
+      alt:"",
+      raza:"nose",
+      edad:"3 años"
+
+    },
+    {
+      id:"",
+      nombre:"Guille",
+      descripcion:"se las manda , le gustan tambien las croqueteas",
+      imagen:"https://mivet.com/hubfs/Canva%20images/Dise%C3%B1o%20sin%20t%C3%ADtulo-Sep-09-2022-12-04-40-49-PM.png",
+      alt:"",
+      raza:"nose",
+      edad:"5 años"
 
     }
   ]
